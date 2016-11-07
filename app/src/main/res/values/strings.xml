@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">   Workout Timer
+        Pro</string>
+
+    <string name="continue_string">RESUME</string>
+    <string name="stop_string">PAUSE</string>
+    <string name="main_string">HARD WORK</string>
+    <string name="great_work">GREAT WORK</string>
+    <string name="reset_string">RESET</string>
+    <string name="lap">LAP</string>
+    <string name="laps">LAPS:</string>
+    <string name="break_string">Break</string>
+    <string name="goal_string">GOAL:</string>
+    <string name="work_string">Work:</string>
+    <string name="break_goal_string">Break:</string>
+    <string name="round_string">Laps:</string>
+    <string name="work_amount_string">WORK</string>
+    <string name="break_amount_string">BREAK</string>
+    <string name="break_main_string">BREAK</string>
+    <string name="seconds">SECONDS:</string>
+    <string name="minutes">MINUTES:</string>
+    <string name="change_lang">CHANGE LANGUAGE:</string>
+    <string name="lang_en">ENGLISH</string>
+    <string name="lang_rus">RUSSIAN</string>
+    <string name="UnitId">ca-app-pub-9770953099305057/7237866325</string>
+
+</resources>

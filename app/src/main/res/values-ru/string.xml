@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">   Workout Timer
+        Pro</string>
+    <string name="continue_string">ПРОДОЛЖИТЬ</string>
+    <string name="stop_string">ПАУЗА</string>
+    <string name="reset_string">СБРОС</string>
+    <string name="main_string">РАБОТА</string>
+    <string name="lap">КРУГ</string>
+    <string name="laps">КРУГИ:</string>
+    <string name="break_string">Перерыв</string>
+    <string name="goal_string">ЦЕЛЬ:</string>
+    <string name="work_string">Работа:</string>
+    <string name="break_goal_string">Перерыв:</string>
+    <string name="round_string">Кругов:</string>
+    <string name="work_amount_string">РАБОТА</string>
+    <string name="break_amount_string">ПЕРЕРЫВ</string>
+    <string name="break_main_string">ПЕРЕРЫВ</string>
+    <string name="seconds">СЕКУНДЫ:</string>
+    <string name="minutes">МИНУТЫ:</string>
+    <string name="great_work">ОТЛИЧНО</string>
+    <string name="change_lang">ИЗМЕНИТЬ ЯЗЫК:</string>
+    <string name="lang_en">АНГЛИЙСКИЙ</string>
+    <string name="lang_rus">РУССКИЙ</string>
+    <string name="UnitId">ca-app-pub-9770953099305057/7237866325</string>
+</resources>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/gradient_background"
+    tools:context="app.exercisetimer.stas.exercisetimer.SettingActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@+string/laps"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorOrange"
+            android:textSize="40dp"
+            android:layout_marginTop="33dp"
+            android:id="@+id/tvLaps" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="3"
+            android:textSize="40dp"
+            android:textColor="@color/colorOrange"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="33dp"
+            android:id="@+id/amountLaps" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarLaps"
+            android:progress="10"
+            android:max="30"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@+string/work_amount_string"
+        android:id="@+id/tvWork"
+        android:textSize="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorOrange"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@+string/minutes"
+        android:id="@+id/tvWorkMinutes"
+        android:textColor="@color/colorOrange"
+        android:textSize="30dp"
+        android:layout_marginLeft="23dp"
+        android:layout_below="@+id/tvWork"
+        android:layout_toStartOf="@+id/tvWork"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:textSize="30dp"
+        android:textColor="@color/colorOrange"
+        android:id="@+id/amount_minutes"
+        android:layout_alignTop="@+id/tvWorkMinutes"
+        android:layout_toEndOf="@+id/tvWorkMinutes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@+string/seconds"
+        android:textColor="@color/colorOrange"
+        android:textSize="30dp"
+        android:id="@+id/tvWorkSeconds"
+        android:layout_alignBottom="@+id/amount_minutes"
+        android:layout_toEndOf="@+id/tvWork" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="30"
+        android:id="@+id/amount_seconds"
+        android:textSize="30dp"
+        android:textColor="@color/colorOrange"
+        android:layout_marginLeft="25dp"
+        android:layout_alignBottom="@+id/tvWorkSeconds"
+        android:layout_toEndOf="@+id/tvWorkSeconds" />
+
+    <SeekBar
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_minutes"
+        android:layout_marginTop="33dp"
+        android:progress="0"
+        android:scrollbarStyle="insideOverlay"
+        android:max="30"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/amount_minutes"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_seconds"
+        android:progress="30"
+        android:max="60"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/tvWorkSeconds"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/tvWork"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@+string/break_amount_string"
+        android:id="@+id/tvBreak"
+        android:layout_marginLeft="15dp"
+        android:textSize="40dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorOrange"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@+string/minutes"
+        android:id="@+id/tvBreakMinutes"
+        android:textSize="30dp"
+        android:layout_marginTop="38dp"
+        android:textColor="@color/colorOrange"
+        android:layout_below="@+id/tvBreak"
+        android:layout_alignStart="@+id/tvWorkMinutes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@+string/seconds"
+        android:id="@+id/tvBreakSeconds"
+        android:textSize="30dp"
+        android:textColor="@color/colorOrange"
+        android:layout_alignTop="@+id/tvBreakMinutes"
+        android:layout_alignStart="@+id/tvWorkSeconds" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:textColor="@color/colorOrange"
+        android:textSize="30dp"
+        android:id="@+id/break_amount_minutes"
+        android:layout_alignTop="@+id/tvBreakMinutes"
+        android:layout_alignStart="@+id/amount_minutes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="15"
+        android:id="@+id/break_amount_seconds"
+        android:textColor="@color/colorOrange"
+        android:textSize="30dp"
+        android:layout_alignBaseline="@+id/tvBreakSeconds"
+        android:layout_alignBottom="@+id/tvBreakSeconds"
+        android:layout_alignStart="@+id/amount_seconds" />
+
+    <SeekBar
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarMinutes"
+        android:layout_below="@+id/tvBreakMinutes"
+        android:layout_alignParentStart="true"
+        android:progress="0"
+        android:max="30"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="34dp" />
+
+    <SeekBar
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarSeconds"
+        android:progress="15"
+        android:max="60"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvBreakSeconds"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/tvBreak"
+        android:layout_marginTop="160dp"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout_lang">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/change_lang"
+            android:textSize="40dp"
+            android:textColor="@color/colorOrange"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="140dp"
+            android:id="@+id/tvChangeLang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ENGLISH"
+            android:textColor="@color/colorOrange"
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/tvLang" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/linearLayout_lang"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
